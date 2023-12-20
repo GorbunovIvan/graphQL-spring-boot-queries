@@ -3,4 +3,16 @@ type Query {
     helloWithParam(name: String): String
     listOfRandomNumbers(size: Int): [Int]
     listReactive: [String]
+    books: [Book]
+}
+
+type Book {
+    id: Int
+    name: String
+    author: Author
+}
+
+type Author {
+    id: Int
+    name: String
 }
