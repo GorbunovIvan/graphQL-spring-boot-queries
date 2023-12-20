@@ -1,0 +1,6 @@
+type Query {
+    hello: String
+    helloWithParam(name: String): String
+    listOfRandomNumbers(size: Int): [Int]
+    listReactive: [String]
+}
