@@ -15,6 +15,15 @@ import java.util.stream.Collectors;
 
 /**
  * Run and go to <a href="http://localhost:8080/graphiql?path=/graphql">page</a>
+ * <br>
+ * Queries:<br>
+ *  - used for read-only operations.<br>
+ *  - designed to retrieve data from the server.<br>
+ *  - queries do not have side effects on the server's data (email, triggering notifications, etc.).<br>
+ *  - executing a query should not alter the data on the server.<br>
+ *
+ * <p>If you want to change data on the server side,
+ * it is strongly recommended to use "mutations" to do this.</p>
  */
 @Controller
 public class GreetingController {
