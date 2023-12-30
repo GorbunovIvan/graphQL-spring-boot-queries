@@ -78,7 +78,10 @@ public class GreetingController {
     /**
      * Query must be like:
      * {
-     * 	books
+     * 	books {
+     *     id
+     *     name
+     *   }
      * }
      */
     @QueryMapping
